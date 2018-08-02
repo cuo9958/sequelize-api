@@ -4,7 +4,7 @@
   "description": "Sequelize的api示例",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/cuo9958/sequelize-api/issues"
   },
-  "homepage": "https://github.com/cuo9958/sequelize-api#readme"
+  "homepage": "https://github.com/cuo9958/sequelize-api#readme",
+  "dependencies": {
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0"
+  }
 }

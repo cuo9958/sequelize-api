@@ -7,6 +7,11 @@ test.js是常用方法的调用
 
 ## API
 
+### 安装
+
+`npm install --save mysql2`
+
+`npm install --save sequelize`
 ### 初始化
 
 - new Sequelize("表名","用户名","密码",{})
@@ -192,3 +197,9 @@ opts.default    默认值对象
 ### 递增  increment("id",{by:1})
 
 ## 递减     decrement("id",{by:1})
+
+## 联查
+
+```
+
+```
