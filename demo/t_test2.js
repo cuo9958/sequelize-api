@@ -28,8 +28,8 @@ const test2 = db.define('t_test2', {
 });
 
 
-test2.sync({
-    force: true
-});
+// test2.sync({
+//     force: true
+// });
 
 module.exports = test2;

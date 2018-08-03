@@ -9,8 +9,8 @@ const test1 = db.define('t_test1', {
         comment: "自增id"
     },
     pid: {
-        type: Sequelize.STRING(50), //长度最大50的字符串
-        defaultValue: "",
+        type:Sequelize.INTEGER,
+        defaultValue: 0,
         comment: "商品自定义id"
     },
     title: {
@@ -25,10 +25,14 @@ const test1 = db.define('t_test1', {
     }
 }, {
     freezeTableName: true,
+    indexes: [{
+        unique: true,
+        fields: ['pid']
+    }, ]
 });
 
-test1.sync({
-    force: true
-});
+// test1.sync({
+//     force: true
+// });
 
 module.exports = test1;
