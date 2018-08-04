@@ -5,6 +5,8 @@ demo文件夹展示常用的写法
 
 test.js是常用方法的调用
 
+[教程地址](https://gitbook.cn/gitchat/activity/5b654bd25f339e0e067338ec)
+
 ## API
 
 ### 安装
