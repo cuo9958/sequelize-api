@@ -11,20 +11,22 @@ console.log("建立带索引的模型", Product);
 console.log("加载测试模型", ProductInfo);
 
 //测试正常加载的主外键
-// test1.hasMany(test2, {
-//     foreignKey: "pid",
-//     sourceKey: "pid",
-// });
-// test2.belongsTo(test1, {
-//     foreignKey: "pid",
-//     targetKey:"pid"
-// });
-// test1.sync({
-//     force: true
-// });
-// test2.sync({
-//     force: true
-// });
+test1.hasMany(test2, {
+    foreignKey: "pid",
+    sourceKey: "pid",
+});
+test2.belongsTo(test1, {
+    foreignKey: "pid",
+    targetKey:"pid"
+});
+test1.sync({
+    force: true
+});
+setTimeout(() => {
+    test2.sync({
+        force: true
+    });
+}, 2500);
 
 // setTimeout(() => {
 //     //测试查询
